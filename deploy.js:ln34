@@ -21,7 +21,8 @@ try {
   let contractAbi = new Abi(json, api?.registry?.getChainProperties());
 
   // instantiating wasm blob on the blockchain
-  const code = new CodePromise(api, json, json.source.wasm);
+  const code = new CodePromise(api, json, json.source.wasm);npm i
+
   
   // gas limit for deployment
   const gasLimit = 100000n * 1000000n
